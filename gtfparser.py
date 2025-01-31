@@ -6,7 +6,7 @@ from collections import namedtuple
 from attrsplitter import parse_GTF_attribute_string
 
 
-_RE_GTF_META_COMMENT = re.compile("##\s*(\S+)\s+(\S*)")
+_RE_GTF_META_COMMENT = re.compile(r"##\s*(\S+)\s+(\S*)")
 
 GenomicInterval = namedtuple("GenomicInterval", "chrom start end strand")
 
